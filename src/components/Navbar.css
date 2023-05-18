@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.navbar.dark {
+    background-color: rgb(29, 29, 29);
+    color: #ddd;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    color: #ddd;
+}
+
+.navbar-links button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-links button:hover {
+    color: #ddd;
+}
