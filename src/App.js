@@ -1,8 +1,12 @@
 import React, { useContext, useEffect } from "react";
-import UserListPage from "./pages/UserListPage.jsx";
 import { ThemeContext } from "./ThemeContext";
 import Navbar from "./components/NavBar";
+import UserListPage from './pages/UserListPage';
+import SettingsPage from './pages/SettingsPage';
+import LoginPage from './pages/LoginPage';
+import Home from './pages/Home';
 import "./App.css";
+
 
 // import necessary components from react-router-dom
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -28,8 +32,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/users" element={<UserListPage />} />
-          <Route path="/login" element={<div />} />
-          <Route path="/" element={<div />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>
